@@ -12,3 +12,5 @@ while condicao:
     print(3)
     print(4)
     condicao = False
+    
+    #break
