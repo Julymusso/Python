@@ -11,7 +11,6 @@ pop - Apaga um item com a chave especificada (del)
 popitem - Apaga o último item adicionado
 update - Atualiza um dicionário com outro
 '''
-import copy
 
 pessoa = {
     'nome': 'Juliana',
@@ -19,31 +18,26 @@ pessoa = {
     'idade': 33
 }
 
-pessoa.setdefault('idade',0)
-print(len(pessoa))
-print(list(pessoa.keys()))
-print(list(pessoa.values()))
-print(list(pessoa.items()))
+# del pessoa['nome']
+# print(pessoa.get('nome','Não existe'))
 
+# nome = pessoa.pop('nome')
+# print(nome)
+# print(pessoa)
 
-d1 = {
-    'a': 1,
-    'b': 2,
-    'l1': [0, 1, 2]
-}
+# last_word = pessoa.popitem()
+# print(last_word)
+# print(pessoa)
 
-d2 = d1.copy()
+pessoa.update({
+    'nome': 'Janaina',
+    'idade': 34})
 
-d2['a'] = 1000
-d2['l1'][1]=99
+print (pessoa)
 
-print(d1)
-print(d2)
+pessoa.update(nome='Jose', idade=50)
+print(pessoa)
 
-d2 = copy.deepcopy(d1)
-
-d2['a'] = 2000
-d2['l1'][1]=999
-
-print(d1)
-print(d2)
+tupla = ('nome', 'Juliana'), ('idade', 33)
+pessoa.update(tupla)
+print(pessoa)
