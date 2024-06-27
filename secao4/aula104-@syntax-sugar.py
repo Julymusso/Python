@@ -24,6 +24,6 @@ def is_string(param):
     if not isinstance(param, str):
         raise TypeError('Param deve ser uma string')
 
-
-print(inverte_string('Juliana'))
+nome = input('Escreva seu nome: ')
+print(inverte_string(nome))
 print('Agora foi executado')
