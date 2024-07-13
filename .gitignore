@@ -1,29 +1,56 @@
 # Ignorar diretórios
-node_modules/
-venv/
-dist/
-build/
-target/
+#node_modules/
+#venv/
+#dist/
+#build/
+#target/
 
 # Ignorar arquivos específicos
-*.log
-*.tmp
-*.swp
-.DS_Store
+#*.log
+#*.tmp
+#*.swp
+#.DS_Store
 
 # Ignorar arquivos de configuração local
-.env
-config/local.json
+#.env
+#config/local.json
 
 # Ignorar todos os arquivos .pyc
-*.pyc
+#*.pyc
 
 # Ignorar todos os arquivos de backup
-*.bak
+#*.bak
 
 # Ignorar todos os arquivos .log no diretório logs/
-logs/*.log
+#logs/*.log
 
 # Ignorar todos os arquivos .env em qualquer diretório
-**/*.env
+#**/*.env
 
+#########################||COMECA AQUI||###########################
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Diretórios do ambiente virtual
+venv/
+.env/
+
+# Arquivos de configuração local
+*.env
+
+# Compilações
+__pycache__/
+*.pyc
+*.pyo
+
+# Diretórios de build
+build/
+dist/
+
+# Arquivos de log
+*.log
+
+# Dependências instaladas
+pip-wheel-metadata/
+*.egg-info/
