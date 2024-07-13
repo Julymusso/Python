@@ -1,0 +1,29 @@
+# Ignorar diretórios
+node_modules/
+venv/
+dist/
+build/
+target/
+
+# Ignorar arquivos específicos
+*.log
+*.tmp
+*.swp
+.DS_Store
+
+# Ignorar arquivos de configuração local
+.env
+config/local.json
+
+# Ignorar todos os arquivos .pyc
+*.pyc
+
+# Ignorar todos os arquivos de backup
+*.bak
+
+# Ignorar todos os arquivos .log no diretório logs/
+logs/*.log
+
+# Ignorar todos os arquivos .env em qualquer diretório
+**/*.env
+
