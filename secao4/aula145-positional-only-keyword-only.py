@@ -7,7 +7,7 @@
 # 🟢 Keyword-Only Arguments (*) - * sozinho ❗️NÃO SUGA❗️ valores.
 # PEP 3102 – Keyword-Only Arguments
 # https://peps.python.org/pep-3102/
-def soma(a, b, /, *, c, **kwargs):
+def soma(a, b, /, *, c, **kwargs): # tudo antes da / obrigatoriamente posicional, tudo depois do * obrigatoriamente nomeado
     print(kwargs)
     print(a + b + c)
 
