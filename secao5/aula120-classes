@@ -1,0 +1,29 @@
+﻿# class - Classes são moldes para criar novos objetos
+# As classes geram novos objetos (instâncias) que
+# podem ter seus próprios atributos e métodos.
+# Os objetos gerados pela classe podem usar seus dados
+# internos para realizar várias ações.
+# Por convenção, usamos PascalCase para nomes de classes.
+# PascalCase: Primeira letra de cada palavra é maiúscula. Eg.: MyDataBase
+
+class Pessoa:
+    def __init__(self,nome,sobrenome):
+        self.nome = nome
+        self.sobrenome = sobrenome
+        
+        return
+    
+p1 = Pessoa('Ramon','Gama')
+
+
+print(p1.nome)
+print(p1.sobrenome)
+
+# p1 = Pessoa()
+# p1.nome = "Ramon"
+# p1.sobrenome = "Gama"
+
+
+
+# string = "Ramon" #instancia da classe str
+# print(string.upper())
